@@ -1,0 +1,55 @@
+.navBannerSection{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+
+.navImg img{
+width: 350px;
+}
+.aboutNav{
+    width: 400px;
+   
+}
+.NavDropdown title{
+    color:darkgoldenrod;
+}
+.aboutNav a{
+    text-decoration: none;
+    color:black;
+    padding-left: 20px;
+    font-size: 17px;
+    transition: margin-left 1s;
+}
+.aboutNav a:hover{
+    margin-left: 20px;
+    color:rgb(255,182,6);
+}
+.navBarDesign{
+    background-color: rgb(210 212 207);
+}
+.aboutNav h5{
+    margin-left: 12px;
+    color:rgb(35, 93, 201)
+}
+
+
+/* ----------------------Carousel Part---------------------- */
+.carousel img{
+height: 650px;
+}
+
+/* ------------------Responsive Section-------------------- */
+@media only screen and (max-width:850px) {
+    .navImg img{
+        width: 300px;
+        }
+        .aboutNav{
+            width: 300px;
+           
+        }
+
+        .carousel img{
+            height: 350px;
+            }
+            
+}

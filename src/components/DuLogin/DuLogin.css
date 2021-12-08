@@ -1,0 +1,28 @@
+*{
+    margin:0;padding:0;
+}
+.duLoginDiv{
+    background-color: #F5F8FA;
+  padding: 100px;
+
+}
+
+.formDiv{
+    width: 670px;
+    background-color: #F5F8FA;
+    margin: auto;
+}
+.formDiv input{
+    padding: 13px;
+}
+.formDiv form{
+    text-align: center;
+}
+.imgStyle{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.formExtra{
+    background-color: #FFFFFF;
+    padding:30px;
+}
