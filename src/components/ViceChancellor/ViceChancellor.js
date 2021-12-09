@@ -5,7 +5,7 @@ import samadSir from '../../images/samadSir.jpg'
 import kamalSir from '../../images/maksud-kamal.jpg'
 import momtajSir from '../../images/Momtaj.jpg'
 import { Link } from 'react-router-dom';
-
+import AOS from 'aos';
 
 
 
@@ -14,7 +14,16 @@ import { Link } from 'react-router-dom';
 const ViceChancellor = () => {
     return (
         <div>
-            <div className='viceChancellor container'>
+            <div className='viceChancellor container'
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+            >
                 <div className='vcProfile'>
                     <img src={vcSir} alt="" />
                     <div className='vcProfileInfo'>
@@ -22,7 +31,9 @@ const ViceChancellor = () => {
                         <h5>Vice Chancellor</h5>
                     </div>
                 </div>
-                <div className='vcInfo'>
+                <div className='vcInfo'
+
+                >
                     <h4>Message from Vice Chancellor</h4>
                     <p>Welcome to the University of Dhaka’s website, featuring the oldest, largest and the premier multidisciplinary university of Bangladesh!
 
@@ -32,15 +43,27 @@ const ViceChancellor = () => {
 
 
             </div>
-            <div className='teachersSection container'>
-                <div className='teacher'>
+            <div className='teachersSection container' data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+
+
+            >
+                <div className='teacher' >
                     <img src={samadSir} alt="" />
                     <div className='teacherInfo'>
                         <h6>Professor Dr. Muhammad Samad</h6>
                         <h5>Pro Vice Chancellor (Administration)</h5>
                     </div>
                 </div>
-                <div className='teacher'>
+                <div className='teacher'
+
+                >
                     <img src={kamalSir} alt="" />
                     <div className='teacherInfo'>
                         <h6>Professor Dr.A.S.M Maksud Kamal</h6>
