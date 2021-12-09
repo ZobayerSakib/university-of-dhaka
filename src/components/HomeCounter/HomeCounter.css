@@ -1,0 +1,81 @@
+.counter{
+    background-image: url('https://thedailynewnation.com/library/1578295577_6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.counterDiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px;
+    padding-left: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+.numberDiv{
+    font-size: 40px;
+
+}
+
+.counterButton{
+    background-color: #654765;
+    margin-left: 20px;
+    height: 28px;
+    width: 53px;
+    border:none;
+    border-radius: 5px;
+    font-weight: 700;
+    color:white;
+    font-size: 15px;
+}
+
+
+.counterDiv h4{
+    color:white;
+    transition: color 2s;
+}
+
+.counterDiv h4:hover{
+    color:rgb(255,182,6);
+    font-weight: 700;
+}
+.iconColor{
+    color:rgb(255,182,6);
+
+}
+.iconBackground{
+    background-color: white;
+    width: 124px;
+    border:2px solid white;
+    border-radius: 50%;
+    text-align:center ;
+    height: 117px;
+    padding-top: 32px;
+    transition: transform 2s ;
+}
+
+.iconBackground:hover{
+    border:2px solid rgb(255,182,6);
+    transform: scale(1.1);
+}
+
+.countNumber{
+    font-size: 50px;
+    color:white
+}
+
+
+
+
+/* -------------Responsive Design -------------------------*/
+@media only screen and (max-width:850px) {
+    .counterDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 30px;
+        padding-left: 50px;
+    }
+}
+

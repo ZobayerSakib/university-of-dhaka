@@ -43,7 +43,7 @@ const ViceChancellor = () => {
 
 
             </div>
-            <div className='teachersSection container' data-aos="fade-up"
+            <div className='teachersSection container' data-aos="fade-left"
                 data-aos-offset="200"
                 data-aos-delay="50"
                 data-aos-duration="1000"

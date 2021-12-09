@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeCounter from '../HomeCounter/HomeCounter';
 import NavBanner from '../NavBanner/NavBanner';
 import ViceChancellor from '../ViceChancellor/ViceChancellor';
 
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <NavBanner></NavBanner>
             <ViceChancellor></ViceChancellor>
+            <HomeCounter></HomeCounter>
         </div>
     );
 };
