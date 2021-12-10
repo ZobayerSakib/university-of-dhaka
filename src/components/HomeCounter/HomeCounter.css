@@ -18,6 +18,7 @@
     background-image: url('../../images/coounter-img/counterimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 350px;
     
 }
 .counterDiv{
@@ -62,7 +63,7 @@
 
 }
 .iconBackground{
-    background-color: white;
+    background-color: #130000;
     width: 124px;
     border:2px solid white;
     border-radius: 50%;
@@ -88,6 +89,9 @@
 /* -------------Responsive Design -------------------------*/
 
 @media only screen and (max-width:850px) {
+    .counter{
+        height: auto;
+    }
     .counterDiv{
         display: grid;
         grid-template-columns: repeat(1,1fr);

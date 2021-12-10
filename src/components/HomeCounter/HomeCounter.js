@@ -37,7 +37,7 @@ const HomeCounter = () => {
                                 {({ countUpRef, start }) => (
                                     <div>
                                         <span ref={countUpRef} />
-                                        <button className='counterButton' onClick={start}>Start</button>
+                                        <button className='counterButton' onClick={start}>Result</button>
                                     </div>
                                 )}
                             </CountUp>
@@ -52,7 +52,7 @@ const HomeCounter = () => {
                             data-aos-delay="50"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out">
-                            <p><i class="fa-4x fas fa-user-shield iconColor"></i></p>
+                            <p><i class="fa-3x fas fa-user-shield iconColor"></i></p>
                         </div>
 
 
@@ -69,7 +69,7 @@ const HomeCounter = () => {
                                 {({ countUpRef, start }) => (
                                     <div>
                                         <span ref={countUpRef} />
-                                        <button className='counterButton' onClick={start}>Start</button>
+                                        <button className='counterButton' onClick={start}>Result</button>
                                     </div>
                                 )}
                             </CountUp>
@@ -85,7 +85,7 @@ const HomeCounter = () => {
                             data-aos-delay="50"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out">
-                            <p><i class="fa-4x fas fa-users iconColor"></i></p>
+                            <p><i class="fa-3x fas fa-users iconColor"></i></p>
                         </div>
 
                         <div className='numberDiv'>
@@ -102,7 +102,7 @@ const HomeCounter = () => {
                                 {({ countUpRef, start }) => (
                                     <div>
                                         <span ref={countUpRef} />
-                                        <button className='counterButton' onClick={start}>Start</button>
+                                        <button className='counterButton' onClick={start}>Result</button>
                                     </div>
                                 )}
                             </CountUp>
@@ -117,7 +117,7 @@ const HomeCounter = () => {
                             data-aos-delay="50"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out">
-                            <p><i class="fa-4x fas fa-school iconColor"></i></p>
+                            <p><i class="fa-3x fas fa-school iconColor"></i></p>
                         </div>
                         <div className='numberDiv'>
 
@@ -133,7 +133,7 @@ const HomeCounter = () => {
                                 {({ countUpRef, start }) => (
                                     <div>
                                         <span ref={countUpRef} />
-                                        <button className='counterButton' onClick={start}>Start</button>
+                                        <button className='counterButton' onClick={start}>Result</button>
                                     </div>
                                 )}
                             </CountUp>

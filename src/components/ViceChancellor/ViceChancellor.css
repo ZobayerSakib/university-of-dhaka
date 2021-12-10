@@ -13,6 +13,7 @@
     padding:30px;
     border-radius: 2px ;
     box-shadow: -1px 1px 20px -5px #aca5a5;
+    text-align: justify;
 }
 .vcInfo h4{
     color:#334D6C;
