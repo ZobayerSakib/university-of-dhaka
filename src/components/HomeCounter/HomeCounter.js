@@ -5,7 +5,10 @@ import CountUp from 'react-countup';
 const HomeCounter = () => {
     return (
         <div>
-
+            <div className='counterTitle'>
+                <h1>University of Dhaka in Numbers</h1>
+                <span><hr /></span>
+            </div>
             <div className='counter'>
                 <div className='counterDiv'
 

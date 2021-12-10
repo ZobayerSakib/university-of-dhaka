@@ -1,5 +1,21 @@
+.counterTitle{
+    margin-bottom: 70px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.counterTitle h1{
+    font-size: 34px;
+    font-weight: 800;
+}
+.counterTitle hr{
+   width: 55px;
+   padding:2px;
+   color:rgb(255,182,6);
+   margin: auto;
+}
+
 .counter{
-    background-image: url('https://thedailynewnation.com/library/1578295577_6.jpg');
+    background-image: url('../../images/coounter-img/counterimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -8,7 +24,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     padding: 30px;
-    padding-left: 50px;
+    padding-left: 40px;
     text-align: center;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -70,12 +86,17 @@
 
 
 /* -------------Responsive Design -------------------------*/
+
 @media only screen and (max-width:850px) {
     .counterDiv{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         padding: 30px;
         padding-left: 50px;
+    }
+    .counterTitle h1{
+        font-size: 24px;
+        font-weight: 800;
     }
 }
 
