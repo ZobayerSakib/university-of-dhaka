@@ -3,7 +3,7 @@
 }
 .duLoginDiv{
     background-color: #F5F8FA;
-  padding: 100px;
+    padding: 100px;
 
 }
 
@@ -12,9 +12,7 @@
     background-color: #F5F8FA;
     margin: auto;
 }
-.formDiv input{
-    padding: 13px;
-}
+
 .formDiv form{
     text-align: center;
 }
@@ -22,7 +20,107 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+
+.imgStyle img{
+    width: 160px;
+}
 .formExtra{
     background-color: #FFFFFF;
     padding:30px;
+    border:2px solid rgb(236, 218, 218);
+    border-radius: 7px;
+    margin: auto;
+    
+}
+.formInput{
+    width: 60%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formInput p{
+    color:#334D6C;
+
+}
+.formInput input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border:1px solid gainsboro;
+    font-size: 16px;
+    opacity: .9;
+}
+
+.loginController{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.loginController input{
+    background-color: #2579A9;
+    width: 120px;
+    height: 45px;
+    color:white;
+    border:none;
+    border-radius:7px;
+}
+.loginController a{
+text-decoration: none;
+font-size: 18px;
+}
+.loginController p{
+    color:#2579A9;
+    font-weight: 700;
+}
+
+.googleButton{
+    width: 150px;
+    background-color: white;
+    color:black;
+    font-weight: 700;
+    height: 40px;
+    border:none;
+    border-radius:6px;
+    box-shadow: -1px 1px 20px -5px #aca5a5;
+}
+.googleButton:hover{
+    box-shadow: 1px 12px 30px 1px #aca5a5
+}
+
+.kormochari{
+    background-color: #2AB27B;
+   color:white;
+   padding:12px;
+   font-weight: 700;
+   width: 100%;
+   border:none;
+   border-radius: 6px;
+}
+/*----------------------------- Responsive Part -----------------------------*/
+@media only screen and (max-width:850px) {
+    .duLoginDiv{
+        background-color: #F5F8FA;
+        padding: 30px;
+    
+    }
+    
+    .formDiv{
+        width: 100%;
+        background-color: #F5F8FA;
+        /* margin: auto; */
+    }
+    .formInput{
+        width: 90%;
+        margin: auto;
+        font-family: 'Poppins', sans-serif;
+    }
+    .imgStyle{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        margin-bottom: 25px;
+    }
+    .imgStyle img{
+        width: 100px;
+    }
 }

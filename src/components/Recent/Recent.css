@@ -1,0 +1,10 @@
+.recentSection{
+    background-color: #EEEEEE;
+    margin-top: 140px;
+}
+.primaryRecentDiv{
+   display: grid;
+   grid-template-columns: 1fr 510px;
+   grid-gap:30px;
+   padding:30px;
+}
