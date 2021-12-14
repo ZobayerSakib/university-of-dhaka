@@ -37,10 +37,26 @@
     width: 99%;
     
 }
-    .welcomeVideo iframe{
-        height: 470px;
-        width: 620px;
-    }
+.welcomeVideo iframe{
+   height: 470px;
+   width: 620px;
+}
+
+.danger{
+    margin: auto;
+   
+}
+
+aside {
+    width: 60%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
   /* ------------------------Responsive Part -----------------------------*/
   @media only screen  and (max-width:850px) {
     .homeWelcome{
