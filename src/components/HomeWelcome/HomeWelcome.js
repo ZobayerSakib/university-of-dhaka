@@ -47,7 +47,7 @@ const HomeWelcome = () => {
                             </aside>
                             <br />
                             <p>
-                                The high standard of education and research for the University was set by its first Vice-Chancellor, Sir P.J. Hartog. In the 2nd Convocation address, he said: 'A man may be an excellent teacher of elementary subjects without the power to add to knowledge. But in advanced work I maintain that no one can really teach well unless he has the combination of imagination with critical power which leads to the original production (of knowledge), and for that if for no other reason, a university to be a true university must see that its teachers are men who are also capable of advancing knowledge.'
+                                The hig standard of education and research for the University was set by its first Vice-Chancellor, Sir P.J. Hartog. In the 2nd Convocation address, he said: 'A man may be an excellent teacher of elementary subjects without the power to add to knowledge. But in advanced work I maintain that no one can really teach well unless he has the combination of imagination with critical power which leads to the original production (of knowledge), and for that if for no other reason, a university to be a true university must see that its teachers are men who are also capable of advancing knowledge.'
                             </p>
                         </Modal.Body>
 
