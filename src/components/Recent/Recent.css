@@ -8,3 +8,11 @@
    grid-gap:30px;
    padding:30px;
 }
+.cardInfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 14px;
+}
+.date{
+    text-align: center;
+}
