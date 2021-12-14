@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../Hooks/useFirebase';
 import './StudentLogin.css'
 import googleIcon from '../../images/duLogin/google.png'
 import img1 from '../../images/duLogin/100yearsDu.png'
 import img2 from '../../images/duLogin/du.png'
 import img3 from '../../images/duLogin/mojib.png'
-const StudentLogin = () => {
+import useAuth from '../../hooks/useAuth';
 
-    const { signInWithGoogle } = useFirebase();
+
+const StudentLogin = () => {
+    const { signInWithGoogle } = useAuth()
 
     const submitTeacherForm = e => {
 
@@ -73,7 +74,7 @@ const StudentLogin = () => {
                     <h3>If you face any difficulty to Login, please contact the <span className='adminEmail'>'Email Admin'</span> of your Department/Institute</h3>
                 </div>
                 <br />
-                <br />
+
                 <hr />
                 <div className='developer'>
                     <p><i> &copy; 2021 University of Dhaka. All Rights Reserved. Developed and Maintained by: Md. Zobayer Hossain Sakib</i></p>

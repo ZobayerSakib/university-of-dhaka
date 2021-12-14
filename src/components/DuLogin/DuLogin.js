@@ -5,9 +5,10 @@ import googleIcon from '../../images/duLogin/google.png'
 import img1 from '../../images/duLogin/100yearsDu.png'
 import img2 from '../../images/duLogin/du.png'
 import img3 from '../../images/duLogin/mojib.png'
-import useFirebase from '../../Hooks/useFirebase';
 const DuLogin = () => {
-    const { signInWithGoogle } = useFirebase();
+    const duLoginAlert = () => {
+        alert('SORRY ! THIS IS CONTROLLED BY UNIVERSITY AUTHORITIES. THANKS')
+    }
 
     const submitTeacherForm = e => {
 
@@ -48,13 +49,13 @@ const DuLogin = () => {
                         </form>
 
                         <p className='mb-2'>or sign in with institutional email</p>
-                        <button className='mb-2 googleButton' onClick={signInWithGoogle}> <img height='25' width='25' src={googleIcon} alt="" /> Sign In</button>
+                        <button className='mb-2 googleButton' onClick={duLoginAlert}> <img height='25' width='25' src={googleIcon} alt="" /> Sign In</button>
                         <p>If you don't have an account, please</p><span><Link to='/signUp'>Sign Up</Link></span>
                     </div>
                 </div>
                 <Link to='/kormoChari'><button className='mt-3 kormochari'>কর্মকর্তা ও কর্মচারিদের প্রোফাইলে রেজিস্ট্রেশন </button></Link>
             </div>
-        </div>
+        </div >
     );
 };
 

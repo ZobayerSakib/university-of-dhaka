@@ -1,6 +1,6 @@
 .navBannerSection{
     font-family: 'Poppins', sans-serif;
-    color:white;
+    color:#c3eac8;
 }
 
 .navImg img{
@@ -25,7 +25,7 @@ width: 350px;
     color:rgb(255,182,6);
 }
 .navBarDesign{
-    background-color: rgb(210 212 207);
+    background-color: rgb(169 182 152 / 1);
 }
 .aboutNav h5{
     margin-left: 12px;

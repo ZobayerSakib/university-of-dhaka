@@ -1,16 +1,20 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+
 import DuLogin from './components/DuLogin/DuLogin';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import StudentLogin from './components/StudentLogin/StudentLogin';
-import useAuth from './Hooks/useAuth';
+import AuthProvider from './context/AuthProvider';
+
 function App() {
   return (
     <div>
-      <useAuth>
+
+      <AuthProvider>
         <Router>
+
           <Header></Header>
 
           <Switch>
@@ -26,8 +30,11 @@ function App() {
               <StudentLogin></StudentLogin>
             </Route>
           </Switch>
+
         </Router>
-      </useAuth>
+
+      </AuthProvider>
+
     </div>
   );
 }

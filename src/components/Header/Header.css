@@ -5,6 +5,12 @@
     
     
 }
+.user{
+    color:white;
+    font-size: 17px;
+    font-weight: 700;
+    margin-right: 20px;
+}
 .headerDesign button{
     height: 40px;
     cursor: pointer;
