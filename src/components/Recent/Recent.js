@@ -42,7 +42,7 @@ const Recent = () => {
                                             ))}
                                             <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>
+                                                    <Modal.Title className='modalTitle'>
                                                         <h3>প্রাণরসায়ন ও অণুপ্রাণ বিজ্ঞান বিভাগে ৫-১১ ডিসেম্বর ২০২১ ‘ক্রীড়া ও সাংস্কৃতিক সপ্তাহ’</h3>
                                                     </Modal.Title>
                                                 </Modal.Header>

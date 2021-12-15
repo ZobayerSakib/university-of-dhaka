@@ -44,19 +44,24 @@
 
 .danger{
     margin: auto;
+    background-color: #FFB606;
+    color:white;
+    font-family: monospace;
+    width: 100%;
+    
    
 }
-
-aside {
-    width: 60%;
-    padding-left: .5rem;
-    margin-left: .5rem;
-    float: right;
-    box-shadow: inset 5px 0 5px -5px #29627e;
-    font-style: italic;
-    color: #29627e;
+.modalPara{
+    text-align: justify;
+    padding: 20px;
 }
+.modalPara p{
+    font-size: 18px;
 
+}
+.modalImg{
+    width: 100%;
+}
   /* ------------------------Responsive Part -----------------------------*/
   @media only screen  and (max-width:850px) {
     .homeWelcome{
