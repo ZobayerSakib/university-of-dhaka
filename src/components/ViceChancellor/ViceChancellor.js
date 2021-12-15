@@ -5,7 +5,7 @@ import samadSir from '../../images/samadSir.jpg'
 import kamalSir from '../../images/maksud-kamal.jpg'
 import momtajSir from '../../images/Momtaj.jpg'
 import { Link } from 'react-router-dom';
-import AOS from 'aos';
+
 
 
 

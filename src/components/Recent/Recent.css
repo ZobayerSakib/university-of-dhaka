@@ -1,6 +1,7 @@
 .recentSection{
     background-color: #EEEEEE;
     margin-top: 140px;
+    overflow-x: hidden;
 }
 .primaryRecentDiv{
    display: grid;
@@ -9,12 +10,12 @@
    padding:30px;
 }
 .cardDesign{
-    margin:17px;
-    box-shadow: 4px 7px 18px 2px #2c241b38;
+   margin:17px;
+   box-shadow: 4px 7px 18px 2px #2c241b38;
 
 }
 .cardPositing{
-    margin-top: 110px;
+    margin-top: 17px;
 }
 .cardInfo{
     display: grid;
@@ -45,7 +46,97 @@
     padding: 6px;
     border-radius: 40px;
 }
-
-.modalTitle{
-    background-color:rgb(255,182,6) ;
+.plusButton button:hover {
+    background-color: black;
+    color:white;
 }
+
+.icon{
+    color:rgb(255,182,6);
+}
+ /*-------------------------------- Notice Section --------------------------*/
+.noticeTitle{
+    margin-left: 47px;
+    margin-top: 45px;
+}
+.noticeTitle h1{
+    font-size: 35px;
+    font-weight: 800;
+}
+ .noticeInfo{
+
+     margin-top:30px ;
+     display: grid;
+     grid-template-rows: repeat(1,1fr);
+     grid-gap: 40px;
+     margin-right: 20px;
+     overflow-y:scroll;
+     max-height: 575px;
+     padding:14px;
+     width: 75%;
+     background-color: white;
+
+ }
+
+ .noticeInfo h4{
+     font-size: 15px;
+ }
+ .noticeInfo h6{
+     opacity: 0.7;
+ }
+ .noticeInfo button {
+     border-radius: 40px;
+     padding:6px;
+     font-weight: 700;
+ }
+ .noticeInfo button:hover {
+     background-color: black;
+     color:white;
+ }
+
+ /*----------------------------------------- Responsive Part----------------------------------- */
+ @media only screen and (max-width:850px) {
+    .recentSection{
+        background-color: #EEEEEE;
+        margin-top: 140px;
+       
+    }
+    .primaryRecentDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:30px;
+        padding:30px;
+     }
+     .cardInfo{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin-top: 14px;
+    }
+    .cardDesign img{
+         width: 100%;
+    }
+
+    .date{
+         text-align: left;
+         margin-left: 20px;
+    }
+    .banglaInfo{
+          margin-left: 20px;
+    }
+    .plusButton{
+         text-align: left;
+         margin-left: 20px;
+         margin-bottom: 30px;
+    }
+
+    /*--------Notices -----------*/
+    .noticeTitle h1{
+         font-size: 35px;
+         font-weight: 800;
+    }
+
+     .noticeInfo{
+        width: 95%;
+}
+ }

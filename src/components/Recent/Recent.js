@@ -19,13 +19,28 @@ const Recent = () => {
 
 
     return (
-        <div className='recentSection'>
+        <div className='recentSection'
+            data-aos="zoom-in-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+        >
             <div className='primaryRecentDiv'>
                 <div>
-                    <h1>Recent and Upcoming Events</h1>
+                    <div className='noticeTitle'>
+                        <h1>Recent and Upcoming Events</h1>
+                    </div>
                     <div>
                         <CardGroup className='cardPositing'>
-                            <Card className='cardDesign'>
+                            <Card className='cardDesign'
+                                data-aos="zoom-in"
+                                data-aos-offset="200"
+                                data-aos-delay="50"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out"
+
+                            >
                                 <img src={recent1} alt="" />
                                 <div className='cardInfo' >
                                     <div className='date'>
@@ -38,7 +53,7 @@ const Recent = () => {
 
                                             {values.map((v, idx) => (
 
-                                                <Link to=''><button key={idx} onClick={() => handleShow(v)}> <i className="fas fa-plus"> </i>&nbsp; Read More</button></Link>
+                                                <Link to=''><button key={idx} onClick={() => handleShow(v)}> <i className="fas fa-plus icon"> </i>&nbsp; Read More</button></Link>
                                             ))}
                                             <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                                                 <Modal.Header closeButton>
@@ -71,7 +86,14 @@ const Recent = () => {
                                     </div>
                                 </div>
                             </Card>
-                            <Card className='cardDesign'>
+                            <Card className='cardDesign'
+                                data-aos="zoom-in"
+                                data-aos-offset="200"
+                                data-aos-delay="50"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out"
+
+                            >
                                 <img src={recent1} alt="" />
                                 <div className='cardInfo'>
                                     <div className='date'>
@@ -84,7 +106,7 @@ const Recent = () => {
 
                                             {values.map((v, idx) => (
 
-                                                <Link to=''><button key={idx} onClick={() => handleShow(v)}> <i className="fas fa-plus"> </i>&nbsp; Read More</button></Link>
+                                                <Link to=''><button className='cardButton' key={idx} onClick={() => handleShow(v)}> <i className="fas fa-plus icon"> </i>&nbsp; Read More</button></Link>
                                             ))}
                                             <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                                                 <Modal.Header closeButton>
@@ -124,7 +146,82 @@ const Recent = () => {
                     </div>
                 </div>
                 <div>
-                    <h1>Notices</h1>
+                    <div className='noticeTitle'>
+                        <h1>Notices</h1>
+                    </div>
+                    <div className='noticeInfo'>
+                        <div>
+                            <h4>শহীদ বুদ্ধিজীবী দিবস ও মহান বিজয় দিবসের কর্মসূচি</h4>
+
+                            <h6>Published: 13 Dec,2021</h6>
+
+                            <Link to=''><button> <i className="fas fa-plus icon"> </i> Read More</button></Link>
+                        </div>
+                        <hr />
+                        <div>
+                            <h4>শহীদ বুদ্ধিজীবী দিবস ও মহান বিজয় দিবসের কর্মসূচি</h4>
+
+                            <h6>Published: 13 Dec,2021</h6>
+
+                            <Link to=''><button> <i className="fas fa-plus icon"> </i> Read More</button></Link>
+                        </div>
+                        <hr />
+                        <div>
+                            <h4>শহীদ বুদ্ধিজীবী দিবস ও মহান বিজয় দিবসের কর্মসূচি</h4>
+
+                            <h6>Published: 13 Dec,2021</h6>
+
+                            <Link to=''><button> <i className="fas fa-plus icon"> </i> Read More</button></Link>
+                        </div>
+                        <hr />
+                        <div>
+                            <h4>শহীদ বুদ্ধিজীবী দিবস ও মহান বিজয় দিবসের কর্মসূচি</h4>
+
+                            <h6>Published: 13 Dec,2021</h6>
+
+                            <Link to=''><button> <i className="fas fa-plus icon"> </i> Read More</button></Link>
+                        </div>
+                        <hr />
+                        <div>
+                            <h4>শহীদ বুদ্ধিজীবী দিবস ও মহান বিজয় দিবসের কর্মসূচি</h4>
+
+                            <h6>Published: 13 Dec,2021</h6>
+
+                            <Link to=''><button> <i className="fas fa-plus icon"> </i> Read More</button></Link>
+                        </div>
+                        <hr />
+                        <div>
+                            <h4>শহীদ বুদ্ধিজীবী দিবস ও মহান বিজয় দিবসের কর্মসূচি</h4>
+
+                            <h6>Published: 13 Dec,2021</h6>
+
+                            <Link to=''><button> <i className="fas fa-plus icon"> </i> Read More</button></Link>
+                        </div>
+                        <hr />
+                        <div>
+                            <h4>শহীদ বুদ্ধিজীবী দিবস ও মহান বিজয় দিবসের কর্মসূচি</h4>
+
+                            <h6>Published: 13 Dec,2021</h6>
+
+                            <Link to=''><button> <i className="fas fa-plus icon"> </i> Read More</button></Link>
+                        </div>
+                        <hr />
+                        <div>
+                            <h4>শহীদ বুদ্ধিজীবী দিবস ও মহান বিজয় দিবসের কর্মসূচি</h4>
+
+                            <h6>Published: 13 Dec,2021</h6>
+
+                            <Link to=''><button> <i className="fas fa-plus icon"> </i> Read More</button></Link>
+                        </div>
+                        <hr />
+                        <div>
+                            <h4>শহীদ বুদ্ধিজীবী দিবস ও মহান বিজয় দিবসের কর্মসূচি</h4>
+
+                            <h6>Published: 13 Dec,2021</h6>
+
+                            <Link to=''><button> <i className="fas fa-plus icon"> </i> Read More</button></Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
