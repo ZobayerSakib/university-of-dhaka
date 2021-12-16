@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './StudentLogin.css'
+import useAuth from '../../hooks/useAuth';
+import './StudentRegister.css';
 import googleIcon from '../../images/duLogin/google.png'
 import img1 from '../../images/duLogin/100yearsDu.png'
 import img2 from '../../images/duLogin/du.png'
 import img3 from '../../images/duLogin/mojib.png'
-import useAuth from '../../hooks/useAuth';
 
 
-const StudentLogin = () => {
+const StudentRegister = () => {
+
     const { signInWithGoogle } = useAuth()
 
     const submitTeacherForm = e => {
@@ -18,6 +19,8 @@ const StudentLogin = () => {
     function refreshPage() {
         window.location.reload();
     }
+
+
     return (
         <div>
             <div className='studentLoginDiv'>
@@ -37,7 +40,7 @@ const StudentLogin = () => {
                     <div className='studentFormExtra' >
                         <div className='upRefresh'>
                             <div>
-                                <h5>Student Login</h5>
+                                <h5>Student Register</h5>
                             </div>
                             <div className='refreshButton'>
                                 <button type="button" onClick={refreshPage}> <span><i className="fas fa-sync-alt "></i>Refresh</span> </button>
@@ -53,10 +56,7 @@ const StudentLogin = () => {
                                 <input className='mb-2' type="password" name="" id="" placeholder='password' required />
                                 <div className='loginController'>
                                     <div>
-                                        <input className='mb-2' type="submit" value="LOGIN" />
-
-
-
+                                        <input className='mb-2' type="submit" value="REGISTER" />
                                     </div>
                                     <div>
                                         <Link className='passwordForget' to=''><p >Forget Your Password?</p></Link>
@@ -64,7 +64,7 @@ const StudentLogin = () => {
                                 </div>
                             </form>
                             <div className='link'>
-                                <p>Are you a ner user ? <Link to='/studentRegister'>Register Please</Link></p>
+                                <p>Have you already Registered ? <Link to='/studentLogin'>Login Please</Link></p>
                             </div>
                             <h3 className='mb-2'> Sign in with institutional email</h3>
                             <button className='mb-2 googleButton' onClick={signInWithGoogle}> <img height='25' width='25' src={googleIcon} alt="" /> Sign In</button>
@@ -89,4 +89,4 @@ const StudentLogin = () => {
     );
 };
 
-export default StudentLogin;
+export default StudentRegister;

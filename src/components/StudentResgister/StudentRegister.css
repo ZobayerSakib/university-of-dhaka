@@ -147,10 +147,10 @@
 .developer p{
     opacity: .6;
 }
-
 .link a{
     color:white;
 }
+
 /*----------------------------- Responsive Part -----------------------------*/
 @media only screen and (max-width:850px) {
     .studentLoginDiv{

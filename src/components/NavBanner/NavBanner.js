@@ -29,15 +29,15 @@ const NavBanner = () => {
 
                                     <div className='aboutNav'>
                                         <h5>ABOUT UNIVERSITY</h5>
-                                        <Link to='/historicalOutline'><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Historical Outline</Link>
+                                        <Link to=''><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Historical Outline</Link>
                                         <br />
-                                        <Link to='/glance'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>University at a Glance</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>University at a Glance</Link>
                                         <br />
-                                        <Link to='/homoris'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Homoris Causa</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Homoris Causa</Link>
                                         <br />
-                                        <Link to='/messageViceChancellor'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Message from the Vice Chancellor</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Message from the Vice Chancellor</Link>
                                         <br />
-                                        <Link to='/chancellorsList'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>List of Vice Chancellors</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>List of Vice Chancellors</Link>
 
                                     </div>
 
@@ -48,15 +48,15 @@ const NavBanner = () => {
                                 <NavDropdown title="ACADEMICS" id="basic-nav-dropdown">
                                     <div className='aboutNav'>
                                         <h5>ACADEMIC BODIES</h5>
-                                        <Link to='/'><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Faculties</Link>
+                                        <Link to=''><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Faculties</Link>
                                         <br />
                                         <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Departments</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Institutes</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Institutes</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Constituent Colleges</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Constituent Colleges</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Affiliated Colleges</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Affiliated Colleges</Link>
 
                                     </div>
 
@@ -66,11 +66,11 @@ const NavBanner = () => {
                                 <NavDropdown title="ADMINISTRATION" id="basic-nav-dropdown">
                                     <div className='aboutNav'>
                                         <h5>HEAD OF ADMINISTRATIVE OFFICES</h5>
-                                        <Link to='/'><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Directors of Research & Bureau </Link>
+                                        <Link to=''><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Directors of Research & Bureau </Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Provosts & Wardens of Halls and Hostels</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Provosts & Wardens of Halls and Hostels</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Head of Offices</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Head of Offices</Link>
                                         <br />
 
 
@@ -84,11 +84,11 @@ const NavBanner = () => {
                                         <h5>STUDENT FACILITIES</h5>
                                         <Link to='/historicalOutline'><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Scholarship & Financial Aids</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Halls of Residence</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Halls of Residence</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Transport Facilities</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Transport Facilities</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Health Insurance</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Health Insurance</Link>
                                         <br />
 
 
@@ -100,15 +100,15 @@ const NavBanner = () => {
                                 <NavDropdown title="RESEARCH" id="basic-nav-dropdown">
                                     <div className='aboutNav'>
 
-                                        <Link to='/'><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> RESEARCH CENTERS & BUREAUS</Link>
+                                        <Link to=''><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> RESEARCH CENTERS & BUREAUS</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> RESEARCH & PUBLICATIONS</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> RESEARCH & PUBLICATIONS</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> RESEARCH COLLABORATIONS</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> RESEARCH COLLABORATIONS</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> FOUNDED PROJECTS</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> FOUNDED PROJECTS</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>UNIVERSITY JOURNALS</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>UNIVERSITY JOURNALS</Link>
 
                                     </div>
 
@@ -117,19 +117,19 @@ const NavBanner = () => {
                                 <NavDropdown title="LINKS" id="basic-nav-dropdown">
                                     <div className='aboutNav'>
 
-                                        <Link to='/'><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> STUDENT LOGIN</Link>
+                                        <Link to=''><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> STUDENT LOGIN</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>TELEPHONE & EMAIL INDEX</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>TELEPHONE & EMAIL INDEX</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> DU FORMS</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> DU FORMS</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> E-TENDER</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> E-TENDER</Link>
                                         <br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>DU JOBS</Link><br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>TRUST FOUND</Link><br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>NOTICE</Link><br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>LATEST NEWS</Link><br />
-                                        <Link to='/'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>EVENTS</Link>
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>DU JOBS</Link><br />
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>TRUST FOUND</Link><br />
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>NOTICE</Link><br />
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>LATEST NEWS</Link><br />
+                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>EVENTS</Link>
 
                                     </div>
 
