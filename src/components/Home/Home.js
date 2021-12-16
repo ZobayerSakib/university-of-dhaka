@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 import HomeCounter from '../HomeCounter/HomeCounter';
 import HomeWelcome from '../HomeWelcome/HomeWelcome';
 import NavBanner from '../NavBanner/NavBanner';
@@ -13,6 +14,7 @@ const Home = () => {
             <HomeCounter></HomeCounter>
             <HomeWelcome></HomeWelcome>
             <Recent></Recent>
+            <Footer></Footer>
         </div>
     );
 };

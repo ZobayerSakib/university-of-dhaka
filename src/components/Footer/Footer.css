@@ -1,0 +1,48 @@
+.footer{
+    background-color: #002147;
+    margin-top: 140px;
+    border-top: 4px solid rgb(255,182,6);
+}
+
+
+.footerDiv{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 50px;
+    padding: 30px;
+    background-image: url('../../images/footer/duBglogo.png');
+    background-repeat: no-repeat;
+    background-size:auto;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.specialPara{
+    font-size: 40px;
+}
+.footerDiv a{
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.footerDiv p{
+    color:white;
+}
+.footerDiv a:hover{
+   text-decoration: underline;
+    font-size: 17px;
+    color:rgb(255,182,6);
+}
+
+
+/*------------------------------- Responsive Part -------------------------*/
+@media only screen and (max-width:850px) {
+    .footerDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:50px;
+        margin-top: 50px;
+        padding: 30px;
+    }
+}

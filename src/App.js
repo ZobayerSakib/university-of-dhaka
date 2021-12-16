@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import StudentLogin from './components/StudentLogin/StudentLogin';
 import AuthProvider from './context/AuthProvider';
 import StudentRegister from './components/StudentResgister/StudentRegister';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route exact path='/studentRegister'>
               <StudentRegister></StudentRegister>
+            </Route>
+            <Route exact path='*'>
+              <NotFound></NotFound>
             </Route>
 
           </Switch>
