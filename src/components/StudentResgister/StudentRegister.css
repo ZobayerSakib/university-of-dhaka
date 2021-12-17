@@ -1,6 +1,19 @@
 *{
     margin:0;padding:0;
 }
+
+.loadingStyle{
+    text-align: center;
+    margin-top: 300px;
+}
+.spinner{
+height: 100px;
+width: 30px;
+
+}
+
+
+
 .studentLoginDiv{
     background-color: #F5F8FA;
     padding: 100px;
@@ -143,6 +156,7 @@
 .developer{
     text-align: center;
     margin-top: 50px;
+   
 }
 .developer p{
     opacity: .6;

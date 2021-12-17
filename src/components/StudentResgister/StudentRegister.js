@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './StudentRegister.css';
@@ -6,18 +6,42 @@ import googleIcon from '../../images/duLogin/google.png'
 import img1 from '../../images/duLogin/100yearsDu.png'
 import img2 from '../../images/duLogin/du.png'
 import img3 from '../../images/duLogin/mojib.png'
+import { Spinner } from 'react-bootstrap';
 
 
 const StudentRegister = () => {
 
-    const { signInWithGoogle } = useAuth()
+    const { signInWithGoogle, createUserWithEmail, error, isLoading } = useAuth();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-    const submitTeacherForm = e => {
+    const emailInput = e => {
+        setEmail(e.target.value)
 
-        e.preventDefault();
     }
+
+    const passwordInput = e => {
+        setPassword(e.target.value)
+
+    }
+
+
+    const submitStudentForm = e => {
+        e.preventDefault();
+        createUserWithEmail(email, password);
+
+
+    }
+
+
     function refreshPage() {
         window.location.reload();
+    }
+
+    if (isLoading) {
+        return <div className='loadingStyle'>
+            <Spinner className='spinner' animation="border" variant="info" />
+        </div>
     }
 
 
@@ -50,10 +74,10 @@ const StudentRegister = () => {
                         <hr />
                         <div className='studentFormInput'>
 
-                            <form onSubmit={submitTeacherForm} >
-                                <input className='mb-2' type="email" name="" id="" placeholder='email' required />
+                            <form onSubmit={submitStudentForm} >
+                                <input className='mb-2' type="email" onBlur={emailInput} name="" id="" placeholder='email' required />
                                 <br />
-                                <input className='mb-2' type="password" name="" id="" placeholder='password' required />
+                                <input className='mb-2' type="password" onBlur={passwordInput} name="" id="" placeholder='password' required />
                                 <div className='loginController'>
                                     <div>
                                         <input className='mb-2' type="submit" value="REGISTER" />
@@ -66,6 +90,7 @@ const StudentRegister = () => {
                             <div className='link'>
                                 <p>Have you already Registered ? <Link to='/studentLogin'>Login Please</Link></p>
                             </div>
+                            <p>{error}</p>
                             <h3 className='mb-2'> Sign in with institutional email</h3>
                             <button className='mb-2 googleButton' onClick={signInWithGoogle}> <img height='25' width='25' src={googleIcon} alt="" /> Sign In</button>
 

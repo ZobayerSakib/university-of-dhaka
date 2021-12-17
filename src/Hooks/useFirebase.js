@@ -74,6 +74,7 @@ const useFirebase = () => {
             .catch((error) => {
                 const errorMessage = error.message;
                 setError(errorMessage)
+                console.log(errorMessage)
 
             });
     }
@@ -89,6 +90,7 @@ const useFirebase = () => {
             .catch((error) => {
                 const errorMessage = error.message;
                 setError(errorMessage)
+                console.log(errorMessage)
             });
     }
 
