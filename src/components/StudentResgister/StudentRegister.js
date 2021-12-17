@@ -29,7 +29,8 @@ const StudentRegister = () => {
     const submitStudentForm = e => {
         e.preventDefault();
         createUserWithEmail(email, password);
-
+        e.target.value = '';
+        alert('Ok')
 
     }
 
