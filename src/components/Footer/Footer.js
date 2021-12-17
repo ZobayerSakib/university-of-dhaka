@@ -8,12 +8,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='footerHeader'>
-                {/* <div>
-                    <h3>UseFul Links</h3>
-                </div>
-                <div>
-                    <img src={duLogo} alt="" />
-                </div> */}
+
             </div>
             <div className='footerDiv'>
                 <div>
@@ -50,6 +45,17 @@ const Footer = () => {
                     <p><b>Email:</b> vcoffice@du2021.ac.bd, regstraar@du.ac.bd
                     </p>
 
+                </div>
+            </div>
+            <div className='footerFooter'>
+                <div className='footerCopy'>
+                    <div>
+                        <p> &copy; 2021 University of Dhaka. All Rights Reserved. Design, Development and Maintenance by <span className='footerName'>Md. Zobayer Hossain Sakib</span> </p>
+                    </div>
+                    <div className='copyLink'>
+                        <span><Link to='/duLogin'>DU Login</Link></span>
+                        <span><Link to='/StudentLogin'>Student Login</Link></span>
+                    </div>
                 </div>
             </div>
         </div>
