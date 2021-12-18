@@ -1,0 +1,58 @@
+.latestNewsPostTitle{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    
+}
+.latestNewsPostTitle h1{
+    font-weight: 700;
+}
+
+.latestNewsPostFormController{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.latestNewsPostForm{
+    background-color: rgb(255,182,6); 
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 4px 7px 18px 2px #2c241b38;
+    border-radius:6px ;
+ 
+}
+.latestNewsPostForm input{
+    width: 96%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding: 12px;
+   border-radius: 6px;
+   border:2px solid rgb(255,182,6); 
+}
+
+.latestNewsPostFormSubmitInput{
+    font-weight: 700;
+    padding: 12px;
+}
+
+/* -------------------------------Responsive Section--------------------------
+------------------------------------------------------------------------------ */
+@media only screen and (max-width:850px) {
+    .latestNewsPostForm{
+        background-color: rgb(255,182,6); 
+        width: 97%;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        box-shadow: 4px 7px 18px 2px #2c241b38;
+        border-radius:6px ;
+     
+    }
+}

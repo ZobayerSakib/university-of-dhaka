@@ -12,7 +12,7 @@ const LatestNews = () => {
         const url = `http://localhost:5000/news`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setLatestNews(data))
+            .then(data => setLatestNews(data.slice(0, 3)))
     }, [])
 
     const message = () => {
@@ -34,7 +34,13 @@ const LatestNews = () => {
                         <div >
 
                             <CardGroup>
-                                <Card className='cardDesignNews'>
+                                <Card className='cardDesignNews'
+                                    data-aos="zoom-in"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-duration="1000"
+                                    data-aos-easing="ease-in-out"
+                                >
                                     <Card.Img variant="top" src={news.img} />
                                     <Card.Body>
                                         <h1>{news.title}</h1>

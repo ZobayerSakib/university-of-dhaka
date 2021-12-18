@@ -1,11 +1,13 @@
 import React from 'react';
+import LatestNewsPost from '../LatestNewsPost/LatestNewsPost';
 import './DashBoard.css';
 
 
 const Dashboard = () => {
     return (
         <div>
-            <h2>Hello</h2>
+
+            <LatestNewsPost></LatestNewsPost>
         </div>
     );
 };
