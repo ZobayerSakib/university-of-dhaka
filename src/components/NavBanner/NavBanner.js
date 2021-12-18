@@ -7,6 +7,8 @@ import navIcon from '../../images/navicon/navicon.png'
 import du1 from '../../images/banner/du1.jpg'
 import du2 from '../../images/banner/du2.jpg'
 import du3 from '../../images/banner/du3.jpg'
+
+
 const NavBanner = () => {
     return (
         <div className='navBannerSection'>
@@ -25,7 +27,7 @@ const NavBanner = () => {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
 
-                                <NavDropdown title="ABOUT" id="basic-nav-dropdown">
+                                <NavDropdown className='title' title="ABOUT" id="basic-nav-dropdown">
 
                                     <div className='aboutNav'>
                                         <h5>ABOUT UNIVERSITY</h5>

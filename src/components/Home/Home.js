@@ -4,6 +4,7 @@ import useAuth from '../../hooks/useAuth';
 import Footer from '../Footer/Footer';
 import HomeCounter from '../HomeCounter/HomeCounter';
 import HomeWelcome from '../HomeWelcome/HomeWelcome';
+import LatestNews from '../LatestNews/LatestNews';
 import NavBanner from '../NavBanner/NavBanner';
 import Recent from '../Recent/Recent';
 import ViceChancellor from '../ViceChancellor/ViceChancellor';
@@ -24,6 +25,7 @@ const Home = () => {
             <ViceChancellor></ViceChancellor>
             <HomeCounter></HomeCounter>
             <HomeWelcome></HomeWelcome>
+            <LatestNews></LatestNews>
             <Recent></Recent>
             <Footer></Footer>
         </div>

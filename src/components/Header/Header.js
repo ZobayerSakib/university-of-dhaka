@@ -15,9 +15,7 @@ const Header = () => {
             }
             <Link to='/duLogin'><button><i class="fas fa-key"></i> DU LOGIN</button></Link>
 
-
-
-
+            <Link to='/dashboard'><button>DASHBOARD</button></Link>
 
             <Link to='/'><button><i class="fas fa-search-plus"></i> FIND PROGRAM</button></Link>
             {

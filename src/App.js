@@ -9,6 +9,7 @@ import StudentLogin from './components/StudentLogin/StudentLogin';
 import AuthProvider from './context/AuthProvider';
 import StudentRegister from './components/StudentResgister/StudentRegister';
 import NotFound from './components/NotFound/NotFound';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -34,6 +35,11 @@ function App() {
             <Route exact path='/studentRegister'>
               <StudentRegister></StudentRegister>
             </Route>
+
+            <Route exact path='/dashboard'>
+              <Dashboard></Dashboard>
+            </Route>
+
             <Route exact path='*'>
               <NotFound></NotFound>
             </Route>
