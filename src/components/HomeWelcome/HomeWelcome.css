@@ -1,5 +1,5 @@
 .homeWelcomeSection{
-    margin-top: 50px;
+    margin-top: 100px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -11,6 +11,7 @@
 .homeWelcome h2{
     color:#4C637E;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 .welcomeInfo p{
     word-spacing: 6px;

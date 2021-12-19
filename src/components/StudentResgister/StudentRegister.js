@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './StudentRegister.css';
@@ -12,8 +12,15 @@ import { Spinner } from 'react-bootstrap';
 const StudentRegister = () => {
 
     const { signInWithGoogle, createUserWithEmail, error, isLoading } = useAuth();
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+
+    const emailRef = useRef();
+    const passwordRef = useRef();
+
+
 
     const emailInput = e => {
         setEmail(e.target.value)
@@ -29,8 +36,28 @@ const StudentRegister = () => {
     const submitStudentForm = e => {
         e.preventDefault();
         createUserWithEmail(email, password);
+
+        const userEmail = emailRef.current.value;
+        const userPassword = passwordRef.current.value;
+
+        const newUser = { userEmail, userPassword }
+
+        fetch(`http://localhost:5000/user`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newUser)
+        }).then(res => res.json())
+            .then(data =>
+                console.log(data))
+
+
+        emailRef.current.value = '';
+        passwordRef.current.value = '';
+
         e.target.value = '';
-        alert('Ok')
+
 
     }
 
@@ -76,9 +103,13 @@ const StudentRegister = () => {
                         <div className='studentFormInput'>
 
                             <form onSubmit={submitStudentForm} >
-                                <input className='mb-2' type="email" onBlur={emailInput} name="" id="" placeholder='email' required />
+
+
+                                <input className='mb-2' type="email" onBlur={emailInput} ref={emailRef} name="" id="" placeholder='email' required />
                                 <br />
-                                <input className='mb-2' type="password" onBlur={passwordInput} name="" id="" placeholder='password' required />
+
+                                <input className='mb-2' type="password" onBlur={passwordInput} ref={passwordRef} name="" id="" placeholder='password' required />
+
                                 <div className='loginController'>
                                     <div>
                                         <input className='mb-2' type="submit" value="REGISTER" />

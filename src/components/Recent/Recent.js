@@ -53,7 +53,7 @@ const Recent = () => {
 
                                             {values.map((v, idx) => (
 
-                                                <Link to=''><button key={idx} onClick={() => handleShow(v)}> <i className="fas fa-plus icon"> </i>&nbsp; Read More</button></Link>
+                                                <Link to=''><button className='recentButton' key={idx} onClick={() => handleShow(v)}> <i className="fas fa-plus icon"> </i>&nbsp; Read More</button></Link>
                                             ))}
                                             <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                                                 <Modal.Header closeButton>
@@ -163,7 +163,7 @@ const Recent = () => {
 
                             <h6>Published: 13 Dec,2021</h6>
 
-                            <Link to=''><button> <i className="fas fa-plus icon"> </i> Read More</button></Link>
+                            <Link to=''><button > <i className="fas fa-plus icon "> </i> Read More</button></Link>
                         </div>
                         <hr />
                         <div>
@@ -171,7 +171,7 @@ const Recent = () => {
 
                             <h6>Published: 13 Dec,2021</h6>
 
-                            <Link to=''><button> <i className="fas fa-plus icon"> </i> Read More</button></Link>
+                            <Link to=''><button > <i className="fas fa-plus icon "> </i> Read More</button></Link>
                         </div>
                         <hr />
                         <div>

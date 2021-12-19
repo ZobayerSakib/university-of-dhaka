@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './NavBanner.css'
-
+import useAuth from '../../hooks/useAuth';
 import navIcon from '../../images/navicon/navicon.png'
 import du1 from '../../images/banner/du1.jpg'
 import du2 from '../../images/banner/du2.jpg'
@@ -10,6 +10,8 @@ import du3 from '../../images/banner/du3.jpg'
 
 
 const NavBanner = () => {
+
+    const { user, logOut } = useAuth()
     return (
         <div className='navBannerSection'>
             <div>
@@ -84,7 +86,7 @@ const NavBanner = () => {
                                 <NavDropdown title="STUDENTS" id="basic-nav-dropdown">
                                     <div className='aboutNav'>
                                         <h5>STUDENT FACILITIES</h5>
-                                        <Link to='/historicalOutline'><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Scholarship & Financial Aids</Link>
+                                        <Link to=''><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Scholarship & Financial Aids</Link>
                                         <br />
                                         <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Halls of Residence</Link>
                                         <br />
@@ -119,20 +121,20 @@ const NavBanner = () => {
                                 <NavDropdown title="LINKS" id="basic-nav-dropdown">
                                     <div className='aboutNav'>
 
-                                        <Link to=''><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> STUDENT LOGIN</Link>
-                                        <br />
-                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>TELEPHONE & EMAIL INDEX</Link>
-                                        <br />
-                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> DU FORMS</Link>
-                                        <br />
-                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> E-TENDER</Link>
-                                        <br />
-                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>DU JOBS</Link><br />
-                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>TRUST FOUND</Link><br />
-                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>NOTICE</Link><br />
-                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>LATEST NEWS</Link><br />
-                                        <Link to=''> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>EVENTS</Link>
 
+                                        <Link to='/duLogin'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>DU LOGIN</Link>
+                                        <br />
+                                        {
+                                            user.email === 'zobayersakib55@gmail.com' && <Link to='/dashboard'> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Dashboard</Link>
+                                        }
+                                        <br />
+                                        {
+                                            user.email ? <button className='linkButton' onClick={logOut} >SIGN OUT</button> : <Link to='/studentLogin'><button className='linkButton' ><i class="fas fa-key"></i> STUDENT LOGIN</button></Link>
+                                        }
+                                        <br />
+                                        {
+                                            user.email && <span className='user text-dark'> {user.displayName} </span>
+                                        }
                                     </div>
 
 

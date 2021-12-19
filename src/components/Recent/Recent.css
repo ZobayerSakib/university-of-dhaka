@@ -42,13 +42,18 @@
     text-align: center;
     margin-bottom: 30px;
 }
-.plusButton button{
-    padding: 6px;
-    border-radius: 40px;
+.recentButton{
+    padding: 9px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid rgb(255,182,6);
+    border-radius: 6px;
+    font-weight: 700;
+    margin-top: 35px;
 }
-.plusButton button:hover {
-    background-color: black;
-    color:white;
+.recentButton:hover {
+    background-color: rgb(255,182,6);
+  
 }
 
 .icon{

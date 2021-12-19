@@ -13,6 +13,7 @@ const Footer = () => {
             <div className='footerDiv'>
                 <div>
                     <p className='specialPara'>Useful Links</p>
+                    <p><Link to='/'>Home</Link></p>
                     <p><Link to='/empty'>Approved NOCs</Link></p>
                     <p><Link to='/empty'>Jobs</Link></p>
                     <p><Link to='/empty'>E-tender</Link></p>

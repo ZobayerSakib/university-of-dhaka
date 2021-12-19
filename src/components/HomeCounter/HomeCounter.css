@@ -15,11 +15,18 @@
 }
 
 .counter{
-    background-image: url('../../images/coounter-img/counterimg.jpg');
+    background-image: url('../../images/coounter-img/duLogo.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 350px;
     
+    border-top:2px solid rgb(255,182,6);
+    border-bottom:2px solid rgb(255,182,6);
+
+    
+}
+.counter:hover{
+box-shadow: 1px 12px 30px 1px #aca5a5;
 }
 .counterDiv{
     display: grid;
@@ -27,7 +34,7 @@
     padding: 30px;
     padding-left: 40px;
     text-align: center;
-    color: white;
+    color: rgb(255,182,6);
     font-family: 'Poppins', sans-serif;
 
 }
@@ -44,19 +51,19 @@
     border:none;
     border-radius: 5px;
     font-weight: 700;
-    color:white;
+    color:rgb(255,182,6);
     font-size: 15px;
 }
 
 
 .counterDiv h4{
-    color:white;
+    color:rgb(255,182,6);
     transition: color 2s;
 }
 
 .counterDiv h4:hover{
     color:rgb(255,182,6);
-    font-weight: 700;
+    font-weight: 800;
 }
 .iconColor{
     color:rgb(255,182,6);
@@ -65,7 +72,7 @@
 .iconBackground{
     background-color: #130000;
     width: 124px;
-    border:2px solid white;
+    border:2px solid rgb(255,182,6);
     border-radius: 50%;
     text-align:center ;
     height: 117px;
@@ -80,7 +87,7 @@
 
 .countNumber{
     font-size: 50px;
-    color:white
+    color:rgb(255,182,6);
 }
 
 

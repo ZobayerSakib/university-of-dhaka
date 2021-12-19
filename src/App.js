@@ -10,6 +10,8 @@ import AuthProvider from './context/AuthProvider';
 import StudentRegister from './components/StudentResgister/StudentRegister';
 import NotFound from './components/NotFound/NotFound';
 import Dashboard from './components/Dashboard/Dashboard';
+import LatestNewsPost from './components/LatestNewsPost/LatestNewsPost';
+import MakeAdmin from './components/MakeAdmin/MakeAdmin';
 
 function App() {
   return (
@@ -38,6 +40,12 @@ function App() {
 
             <Route exact path='/dashboard'>
               <Dashboard></Dashboard>
+            </Route>
+            <Route exact path='/latestNewsPost'>
+              <LatestNewsPost></LatestNewsPost>
+            </Route>
+            <Route exact path='/makeAdmin'>
+              <MakeAdmin></MakeAdmin>
             </Route>
 
             <Route exact path='*'>

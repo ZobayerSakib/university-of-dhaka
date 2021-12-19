@@ -9,7 +9,7 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState('')
     const [isLoading, setIsLoading] = useState(true)
-
+    const [admin, setAdmin] = useState(false);
 
     const googleProvider = new GoogleAuthProvider();
     const auth = getAuth();
@@ -25,7 +25,7 @@ const useFirebase = () => {
 
                 const user = result.user;
                 setUser(user);
-                console.log(user);
+                // console.log(user);
 
             }).catch(error => {
                 const errorMessage = error.message;
@@ -61,6 +61,13 @@ const useFirebase = () => {
 
     }, [])
 
+    useEffect(() => {
+        fetch(`http://localhost:5000/user/${user.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
+    }, [user.email])
+
+
     //Create User with email and password
 
     const createUserWithEmail = (email, password) => {
@@ -90,12 +97,13 @@ const useFirebase = () => {
             .catch((error) => {
                 const errorMessage = error.message;
                 setError(errorMessage)
-                console.log(errorMessage)
+                // console.log(errorMessage)
             });
     }
 
     return {
         user,
+        admin,
         error,
         isLoading,
         signInWithGoogle,

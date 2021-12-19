@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import Footer from '../Footer/Footer';
-import NavBanner from '../NavBanner/NavBanner';
 import './LatestNewsPost.css';
 
 
@@ -36,7 +35,7 @@ const LatestNewsPost = () => {
     }
     return (
         <div>
-            <NavBanner></NavBanner>
+
 
             <div className='latestNewsPostTitle'>
                 <h1>Post Latest News</h1>

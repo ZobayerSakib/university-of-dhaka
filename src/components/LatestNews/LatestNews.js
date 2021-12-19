@@ -12,7 +12,7 @@ const LatestNews = () => {
         const url = `http://localhost:5000/news`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setLatestNews(data.slice(0, 3)))
+            .then(data => setLatestNews(data))
     }, [])
 
     const message = () => {

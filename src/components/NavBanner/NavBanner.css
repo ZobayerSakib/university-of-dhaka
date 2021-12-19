@@ -2,15 +2,16 @@
     font-family: 'Poppins', sans-serif;
     color:#c3eac8;
 }
-.title{
+title{
     color:red
-
+    
 }
 .navImg img{
 width: 350px;
 }
 .aboutNav{
     width: 400px;
+    margin-left: 12px;
    
 }
 .NavDropdown title{
@@ -35,13 +36,23 @@ width: 350px;
     color:rgb(35, 93, 201)
 }
 
-
+.linkButton {
+    background-color: rgb(255,182,6);
+    padding:7px;
+    border:none;
+    border-radius: 6px;
+    font-weight: 700;
+    width: 200px;
+    margin-bottom: 10px;
+}
 /* ----------------------Carousel Part---------------------- */
 .carousel img{
 height: 650px;
 }
 
-/* ------------------Responsive Section-------------------- */
+/* ------------------Responsive Section---------------------------
+------------------------------------------------------------------ */
+
 @media only screen and (max-width:850px) {
     .navImg img{
         width: 300px;
