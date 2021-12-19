@@ -9,7 +9,7 @@ const MakeAdmin = () => {
     }
     const handleAdminForm = e => {
         const user = { email }
-        fetch('http://localhost:5000/user/admin', {
+        fetch('https://obscure-everglades-73255.herokuapp.com/user/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

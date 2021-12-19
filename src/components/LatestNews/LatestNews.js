@@ -9,7 +9,7 @@ const LatestNews = () => {
     const [latestNews, setLatestNews] = useState([])
 
     useEffect(() => {
-        const url = `http://localhost:5000/news`;
+        const url = `https://obscure-everglades-73255.herokuapp.com/news`;
         fetch(url)
             .then(res => res.json())
             .then(data => setLatestNews(data))

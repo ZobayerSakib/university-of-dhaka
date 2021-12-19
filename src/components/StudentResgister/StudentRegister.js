@@ -42,7 +42,7 @@ const StudentRegister = () => {
 
         const newUser = { userEmail, userPassword }
 
-        fetch(`http://localhost:5000/user`, {
+        fetch(`https://obscure-everglades-73255.herokuapp.com/user`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

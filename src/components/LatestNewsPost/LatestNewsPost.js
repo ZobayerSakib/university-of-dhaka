@@ -17,7 +17,7 @@ const LatestNewsPost = () => {
         const date = dateRef.current.value;
         const latestDate = { img, title, date }
 
-        fetch(`http://localhost:5000/news`, {
+        fetch(`https://obscure-everglades-73255.herokuapp.com/news`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
